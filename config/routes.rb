@@ -1,6 +1,8 @@
 RubyLocoJobBoard::Application.routes.draw do
+  resources :jobs
+
   root "pages#home"
-  get "About" => "pages#about"
-  get "Pricing" => "pages#pricing"
-  get "Contact" => "pages#contact"
+  get "about" => "pages#about"
+  get "pricing" => "pages#pricing"
+  get "contact" => "pages#contact"
 end
